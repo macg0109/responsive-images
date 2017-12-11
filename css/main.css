@@ -1,0 +1,56 @@
+/*********************************************
+Responsive Images By Nick MacGowan
+
+Attribution
+All images used belong to:
+Markis Spiske - https://500px.com/markusspiske
+Yinan Chen - https://500px.com/webmaster85
+Fahin Akhter - https//500px.com/fahinakhter
+**********************************************/
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float:left;
+    margin-top: 2.5%;
+    width: 100%;
+}
+
+img {
+    width: 90%;
+    transition: transform 1.0s ease-in-out;
+}
+
+img:hover {
+    transform: translate(50px,100px);
+    z-index: 20;
+}
+
+@media screen and (min-width: 600px){
+    li {
+        width: 50%;
+    }
+    img:hover {
+        transform: rotate(360deg);
+        z-index: 20;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    li {
+        width: 25%;
+    }
+    img:hover {
+        transform: scale(1.5,1.5);
+        z-index: 20;
+    }
+}
